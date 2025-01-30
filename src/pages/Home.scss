@@ -1,0 +1,90 @@
+.home-page {
+  .hero {
+    background-image: url('/assets/pictures/bg_1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    color: #fff;
+    padding: 60px 0;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: green;
+    }
+
+    .lead {
+      font-size: 1.2rem;
+    }
+  }
+
+  .intro {
+    max-width: 900px;
+  }
+
+  .introduction img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .services,
+  .testimonials,
+  .appointment,
+  .credentials,
+  .blog,
+  .contact-info {
+    padding: 60px 0;
+  }
+
+  .services .card,
+  .testimonials .card,
+  .blog .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .hero {
+      min-height: 300px;
+      padding: 40px 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .services .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .testimonials .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .appointment .btn,
+    .contact-info .btn {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .hero {
+      min-height: 250px;
+    }
+
+    .intro img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
